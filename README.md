@@ -70,6 +70,8 @@ Figure -04 shows various symbols associated with IDE
 ## FIGURE -03
 Figure -03 shows the functional view of serial monitor with a baud of 9600.
 
+
+```
 THE LOOP() FUNCTION
 The loop() function is run continuously in an endless loop while the Arduino board is powered. Thisfunction is the core of most programs.
 In this example, you turn pin 13’s built-in LED on using the function digitalWrite() to send a HIGH (5V) signal to the pin. Then you pause the execution of the program for one second with the function delay(). During this time, the LED will remain on. After this pause, you turn the LED off, again using the function digitalWrite() but sending a LOW (0V) signal instead, and then pause the program for another second. This code will loop continuously, making the LED blink.
@@ -132,7 +134,8 @@ void loop() {
 digitalWrite(ledPin, HIGH); // set the LED on
 delay(1000); // wait for a second
 digitalWrite(ledPin, LOW); // set the LED off
-delay(
+delay()
+```
 ## program:
 ```
 void setup()
