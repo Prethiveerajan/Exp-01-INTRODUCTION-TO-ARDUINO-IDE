@@ -1,13 +1,14 @@
 # Exp-01-INTRODUCTION-TO-ARDUINO-IDE
 
-INTRODUCTION TO ARDUINO & IDE
+## INTRODUCTION TO ARDUINO & IDE
 
 
-AIM: To familiarize the operation of Arduino uno and understand the operation of IDE 
-EQUIPMENT/ COMPONENTS REQUIRED:
+## AIM:
+ To familiarize the operation of Arduino uno and understand the operation of IDE 
+## EQUIPMENT/ COMPONENTS REQUIRED:
 	Hardware: Arduino uno 
 	Software: Arduino IDE 
-THEORY:
+## THEORY:
 Arduino is an open source electronics prototyping platform composed of a microcontroller, a Programming language, and an IDE. Arduino is a tool for making interactive applications, designed to simplify this task for beginners.
 The first thing you need to do if you want to work with Arduino is to buy an Arduino board and a standard USB cable (A-to-B plug if you are using an Arduino Uno). Well, of course you will need more than this if you want to build any reasonable useful application, but for the moment you’ll just work with the bare essentials. Arduino runs on Windows, Mac OS X, and Linux, so there’s a version of Arduino for you whatever your OS. Go to the Arduino software web site at http://arduino.cc/en/Main/Software and download the version of the software compatible with your system. If after reading the following sections you are still having trouble with the installation, you can have more detailed information at http://arduino.cc/en/Guide/HomePage.
 
@@ -19,35 +20,35 @@ You need to install the Arduino drivers before you can start working with your b
 . Right-click on it, and choose “Update Driver Software,” selecting “Browse my Computer for Driver Software.”
 . Finally, navigate and select the Arduino Uno’s driver file named ArduinoUNO.inf located in the Drivers folder of the Arduino software folder you have just downloaded. Windows will successfully install the board now.
 
-BOARD SELECTION :
+## BOARD SELECTION :
  
 
-FIGURE -01
+## FIGURE -01
 
 
 
 ![1](https://user-images.githubusercontent.com/36288975/163127561-8f7597c7-c481-44e9-94cb-90bce2932d06.jpg)
 
 
-PORT SELECTION 
+# PORT SELECTION 
 
 
  
 ![image](https://user-images.githubusercontent.com/36288975/163127751-6542261b-9670-4cc9-98ba-426a0a2f73a7.png)
 
-FIGURE-02
+## FIGURE-02
 
 
 
 
-ARDUINO INPUT AND OUTPUT PINS
+## ARDUINO INPUT AND OUTPUT PINS
 The Arduino Uno has 14 digital input/output pins and six analog input pins, as shown in Figure. As mentioned, these pins correspond to the input/output pins on your ATmega microcontroller. The architecture of the Arduino board exposes these pins so they can be easily connected to external circuits. Arduino pins can be set up in two modes: input and output. The ATmega pins are set to input by default, so you don’t need to explicitly set any pins as inputs in Arduino, although you will often do this in your code for clarity.
 
 
  ![image](https://user-images.githubusercontent.com/36288975/163127780-c43afb60-dd14-482d-b1b2-a2c297ccd68a.png)
 
 
-FIGURE-03
+## FIGURE-03
 
 
 
@@ -57,7 +58,7 @@ FIGURE-03
 ![image](https://user-images.githubusercontent.com/36288975/163127840-d65c1af4-aa3f-42eb-b7bf-41cc9e8f3fae.png)
 
 
-FIGURE-04
+## FIGURE-04
 
 
 
@@ -66,7 +67,7 @@ Figure -04 shows various symbols associated with IDE
  
 ![image](https://user-images.githubusercontent.com/36288975/163127854-1b1ce83e-43be-44b9-b313-ab42932fcabf.png)
 
-FIGURE -03
+## FIGURE -03
 Figure -03 shows the functional view of serial monitor with a baud of 9600.
 
 THE LOOP() FUNCTION
@@ -132,9 +133,42 @@ digitalWrite(ledPin, HIGH); // set the LED on
 delay(1000); // wait for a second
 digitalWrite(ledPin, LOW); // set the LED off
 delay(
+## program:
+```
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(7,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(2,OUTPUT); 
+}
+
+void loop()
+{
+  digitalWrite(8, HIGH);
+  delay(500); // Wait for 1000 millisecond(s)
+  digitalWrite(8, LOW);
+  delay(500); // Wait for 1000 millisecond(s)
+  digitalWrite(7, HIGH);
+  delay(500); // Wait for 1000 millisecond(s)
+  digitalWrite(7, LOW);
+  delay(500);
+  digitalWrite(4, HIGH);
+  delay(500); // Wait for 1000 millisecond(s)
+  digitalWrite(4, LOW);
+  delay(500);
+  digitalWrite(2, HIGH);
+  delay(500); // Wait for 1000 millisecond(s)
+  digitalWrite(2, LOW);
+  delay(500);
+}
+```
+
+## output:
+![output](re.png)
 
 
-RESULTS:
+## RESULTS:
 Functioning of arduino uno and IDE is studied.
 
 
